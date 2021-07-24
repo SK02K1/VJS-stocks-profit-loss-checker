@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check Profit or Loss on your Stocks | VanillaJS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <h1>Check profit or Loss on your stocks</h1>
+    <form action="#">
+      <label for="stock-purchase-price">
+        Purchase price
+        <input
+          type="number"
+          min="1"
+          step="any"
+          name="stock-purchase-price"
+          id="stock-purchase-price"
+          placeholder="Enter stock purchase price"
+          required
+        />
+      </label>
+      <label for="stock-quantity">
+        quantity
+        <input
+          type="number"
+          min="1"
+          name="stock-quantity"
+          id="stock-quantity"
+          placeholder="Enter quantity"
+          required
+        />
+      </label>
+      <label for="stock-current-price">
+        Current price
+        <input
+          type="number"
+          min="1"
+          step="any"
+          name="stock-current-price"
+          id="stock-current-price"
+          placeholder="Enter stock current price"
+          required
+        />
+      </label>
+      <button class="check-btn" type="submit">Check</button>
+      <button class="reset-btn" type="reset">Reset</button>
+    </form>
+    <div class="message"></div>
+    <div class="output-container">
+      <div class="absolute-value"></div>
+      <div class="percentage-value"></div>
+    </div>
+    <audio class="sound-effect-profit" src="./src/audio/profit.mp3"></audio>
+    <audio class="sound-effect-loss" src="./src/audio/loss.mp3"></audio>
+    <script src="src/index.js" type="module"></script>
+  </body>
+</html>
