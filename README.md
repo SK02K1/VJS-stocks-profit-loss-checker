@@ -1,2 +1,3 @@
 # VJS-stocks-profit-loss-checker
-Created with CodeSandbox
+
+[Live project](https://04vfy.csb.app/)
