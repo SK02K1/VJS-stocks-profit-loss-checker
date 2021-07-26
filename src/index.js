@@ -27,9 +27,9 @@ checkBtn.addEventListener("click", () => {
     isNaN(currentPrice) === false
   ) {
     if (
-      purchasePrice !== 0 &&
-      quantity !== 0 &&
-      currentPrice !== 0 &&
+      purchasePrice > 0 &&
+      quantity > 0 &&
+      currentPrice > 0 &&
       Number.isInteger(quantity)
     ) {
       const [result, absoluteValue, percentageValue, message] = checkProfitLoss(
